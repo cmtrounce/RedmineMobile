@@ -1,0 +1,6 @@
+framework module Pods_RedmineMobile {
+  umbrella header "Pods-RedmineMobile-umbrella.h"
+
+  export *
+  module * { export * }
+}

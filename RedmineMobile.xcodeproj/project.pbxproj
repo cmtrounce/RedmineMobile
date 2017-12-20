@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81201A9C95F419695EBD6390 /* Pods_RedmineMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCBA51AAB598E5107D2A5DE5 /* Pods_RedmineMobile.framework */; };
 		F2AECA781FEB13B3008C5167 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AECA771FEB13B3008C5167 /* AppDelegate.swift */; };
 		F2AECA7A1FEB13B3008C5167 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AECA791FEB13B3008C5167 /* ViewController.swift */; };
 		F2AECA7D1FEB13B3008C5167 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2AECA7B1FEB13B3008C5167 /* Main.storyboard */; };
 		F2AECA7F1FEB13B3008C5167 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2AECA7E1FEB13B3008C5167 /* Assets.xcassets */; };
 		F2AECA821FEB13B3008C5167 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2AECA801FEB13B3008C5167 /* LaunchScreen.storyboard */; };
+		F2AECA8E1FEB1882008C5167 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AECA8D1FEB1882008C5167 /* KeychainManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C0DB1BE881F4D458EB0A9ED /* Pods-RedmineMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedmineMobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-RedmineMobile/Pods-RedmineMobile.release.xcconfig"; sourceTree = "<group>"; };
+		66C37C3AC9E4FF89BE23B754 /* Pods-RedmineMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedmineMobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RedmineMobile/Pods-RedmineMobile.debug.xcconfig"; sourceTree = "<group>"; };
+		DCBA51AAB598E5107D2A5DE5 /* Pods_RedmineMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RedmineMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2AECA741FEB13B3008C5167 /* RedmineMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedmineMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2AECA771FEB13B3008C5167 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2AECA791FEB13B3008C5167 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		F2AECA7E1FEB13B3008C5167 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2AECA811FEB13B3008C5167 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2AECA831FEB13B3008C5167 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2AECA8D1FEB1882008C5167 /* KeychainManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81201A9C95F419695EBD6390 /* Pods_RedmineMobile.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1DBB9D87607395F20E961FD7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				66C37C3AC9E4FF89BE23B754 /* Pods-RedmineMobile.debug.xcconfig */,
+				3C0DB1BE881F4D458EB0A9ED /* Pods-RedmineMobile.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F2AECA6B1FEB13B3008C5167 = {
 			isa = PBXGroup;
 			children = (
 				F2AECA761FEB13B3008C5167 /* RedmineMobile */,
 				F2AECA751FEB13B3008C5167 /* Products */,
+				1DBB9D87607395F20E961FD7 /* Pods */,
+				FA58F0D7E45BEDFE3F9BA513 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +72,55 @@
 		F2AECA761FEB13B3008C5167 /* RedmineMobile */ = {
 			isa = PBXGroup;
 			children = (
+				F2AECA8C1FEB180C008C5167 /* Assets */,
+				F2AECA8B1FEB17F9008C5167 /* View Controllers */,
+				F2AECA8A1FEB17F5008C5167 /* Services */,
+				F2AECA891FEB17F0008C5167 /* Helpers */,
 				F2AECA771FEB13B3008C5167 /* AppDelegate.swift */,
-				F2AECA791FEB13B3008C5167 /* ViewController.swift */,
 				F2AECA7B1FEB13B3008C5167 /* Main.storyboard */,
-				F2AECA7E1FEB13B3008C5167 /* Assets.xcassets */,
-				F2AECA801FEB13B3008C5167 /* LaunchScreen.storyboard */,
 				F2AECA831FEB13B3008C5167 /* Info.plist */,
 			);
 			path = RedmineMobile;
+			sourceTree = "<group>";
+		};
+		F2AECA891FEB17F0008C5167 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F2AECA8D1FEB1882008C5167 /* KeychainManager.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F2AECA8A1FEB17F5008C5167 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F2AECA8B1FEB17F9008C5167 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F2AECA791FEB13B3008C5167 /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		F2AECA8C1FEB180C008C5167 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F2AECA7E1FEB13B3008C5167 /* Assets.xcassets */,
+				F2AECA801FEB13B3008C5167 /* LaunchScreen.storyboard */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		FA58F0D7E45BEDFE3F9BA513 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCBA51AAB598E5107D2A5DE5 /* Pods_RedmineMobile.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +130,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2AECA861FEB13B3008C5167 /* Build configuration list for PBXNativeTarget "RedmineMobile" */;
 			buildPhases = (
+				A2AD9563755C6CA4893B2A5A /* [CP] Check Pods Manifest.lock */,
 				F2AECA701FEB13B3008C5167 /* Sources */,
 				F2AECA711FEB13B3008C5167 /* Frameworks */,
 				F2AECA721FEB13B3008C5167 /* Resources */,
+				79FD3C5D2450042A51F64B73 /* [CP] Embed Pods Frameworks */,
+				8F389A18A8A83597B9042124 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,12 +193,79 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		79FD3C5D2450042A51F64B73 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RedmineMobile/Pods-RedmineMobile-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RedmineMobile/Pods-RedmineMobile-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F389A18A8A83597B9042124 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RedmineMobile/Pods-RedmineMobile-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2AD9563755C6CA4893B2A5A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RedmineMobile-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F2AECA701FEB13B3008C5167 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F2AECA7A1FEB13B3008C5167 /* ViewController.swift in Sources */,
+				F2AECA8E1FEB1882008C5167 /* KeychainManager.swift in Sources */,
 				F2AECA781FEB13B3008C5167 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +401,7 @@
 		};
 		F2AECA871FEB13B3008C5167 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66C37C3AC9E4FF89BE23B754 /* Pods-RedmineMobile.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +417,7 @@
 		};
 		F2AECA881FEB13B3008C5167 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C0DB1BE881F4D458EB0A9ED /* Pods-RedmineMobile.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
