@@ -6,11 +6,19 @@ target 'RedmineMobile' do
   use_frameworks!
   
   # Pods for RedmineMobile
-pod 'PromiseKit'
-pod 'Alamofire'
+
+pod 'RxSwift'
+pod 'RxCocoa'
+pod 'RxWebKit'
+pod 'RxDataSources'
+pod 'RxAlamofire'
 pod 'AlamofireImage'
 pod 'IQKeyboardManager'
 pod 'SwiftKeychainWrapper'
-pod 'Moya'
+pod 'SVProgressHUD'
+pod 'FSCalendar'
+pod 'Hero'
+pod 'SDWebImage'
+pod 'SwiftDate'
 
 end

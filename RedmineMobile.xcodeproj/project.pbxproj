@@ -8,26 +8,150 @@
 
 /* Begin PBXBuildFile section */
 		81201A9C95F419695EBD6390 /* Pods_RedmineMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCBA51AAB598E5107D2A5DE5 /* Pods_RedmineMobile.framework */; };
+		F208F6C52082846D00694058 /* EnumerationsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208F6C42082846D00694058 /* EnumerationsApi.swift */; };
+		F208F6C7208284FB00694058 /* EnumerationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208F6C6208284FB00694058 /* EnumerationService.swift */; };
+		F208F6CB20828DBE00694058 /* LogHoursRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208F6CA20828DBE00694058 /* LogHoursRequest.swift */; };
+		F208F6CF208364A700694058 /* IssuesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208F6CD208364A700694058 /* IssuesViewController.swift */; };
+		F208F6D0208364A700694058 /* IssuesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F208F6CE208364A700694058 /* IssuesViewController.xib */; };
+		F208F6D5208364FF00694058 /* IssueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208F6D3208364FF00694058 /* IssueTableViewCell.swift */; };
+		F208F6D6208364FF00694058 /* IssueTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F208F6D4208364FF00694058 /* IssueTableViewCell.xib */; };
+		F208F6D920836A3C00694058 /* TimeEntryActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208F6D820836A3C00694058 /* TimeEntryActivity.swift */; };
+		F208F6DB20836A6F00694058 /* IssuePriorities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208F6DA20836A6F00694058 /* IssuePriorities.swift */; };
+		F208F6DE20836BAD00694058 /* IssuesApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208F6DD20836BAD00694058 /* IssuesApi.swift */; };
+		F208F6E120836C1600694058 /* ProjectIssuesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208F6E020836C1600694058 /* ProjectIssuesRequest.swift */; };
+		F208F6E320836C9D00694058 /* IssuesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208F6E220836C9D00694058 /* IssuesViewModel.swift */; };
+		F208F6E620836CB600694058 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208F6E520836CB600694058 /* ViewModel.swift */; };
+		F208F6E820836D3300694058 /* IssueService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208F6E720836D3300694058 /* IssueService.swift */; };
+		F208F6EB20836DE300694058 /* IssuesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208F6EA20836DE300694058 /* IssuesResponse.swift */; };
+		F208F6EE20837B1C00694058 /* Sequence+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208F6ED20837B1C00694058 /* Sequence+Utils.swift */; };
+		F208F6F22083A03600694058 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208F6F02083A02E00694058 /* WebViewController.swift */; };
+		F208F6F32083A04100694058 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F208F6F12083A02E00694058 /* WebViewController.xib */; };
+		F208F6F72083D50900694058 /* ProjectTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208F6F52083D50900694058 /* ProjectTimerViewController.swift */; };
+		F208F6F82083D50900694058 /* ProjectTimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F208F6F62083D50900694058 /* ProjectTimerViewController.xib */; };
+		F208F6FA2083F14200694058 /* ProjectTimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208F6F92083F14200694058 /* ProjectTimerViewModel.swift */; };
+		F208F6FC2083F17C00694058 /* TimekeepingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208F6FB2083F17C00694058 /* TimekeepingService.swift */; };
+		F208F6FE208538C500694058 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208F6FD208538C500694058 /* AuthenticationService.swift */; };
+		F208F70020853F2C00694058 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208F6FF20853F2C00694058 /* UserService.swift */; };
+		F208F70320853F6600694058 /* UsersApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208F70220853F6600694058 /* UsersApi.swift */; };
+		F208F7062085405E00694058 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208F7052085405E00694058 /* User.swift */; };
+		F208F7092085444E00694058 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208F7082085444E00694058 /* Errors.swift */; };
+		F208F70C2085463400694058 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208F70B2085463000694058 /* UIViewController+Utils.swift */; };
+		F28262B6201E021D00025086 /* UIButton+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28262B5201E021D00025086 /* UIButton+Utils.swift */; };
+		F29047FF201CB7700059D6F2 /* TimeEntryApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29047FE201CB7700059D6F2 /* TimeEntryApi.swift */; };
+		F2904801201CB91E0059D6F2 /* TimeEntriesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2904800201CB91E0059D6F2 /* TimeEntriesResponse.swift */; };
+		F2904803201CBA030059D6F2 /* TimeEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2904802201CBA030059D6F2 /* TimeEntry.swift */; };
+		F2904805201CBA680059D6F2 /* TimeEntryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2904804201CBA680059D6F2 /* TimeEntryService.swift */; };
+		F2904807201CC03D0059D6F2 /* LoggedHoursViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2904806201CC03D0059D6F2 /* LoggedHoursViewModel.swift */; };
+		F290480B201CCBBD0059D6F2 /* MyHoursHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = F290480A201CCBBD0059D6F2 /* MyHoursHeader.xib */; };
+		F290480F201CCF130059D6F2 /* ProjectHoursTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290480D201CCF130059D6F2 /* ProjectHoursTableViewCell.swift */; };
+		F2904810201CCF130059D6F2 /* ProjectHoursTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F290480E201CCF130059D6F2 /* ProjectHoursTableViewCell.xib */; };
+		F2904814201CCFE50059D6F2 /* ProjectTimeEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2904813201CCFE50059D6F2 /* ProjectTimeEntry.swift */; };
+		F2904817201CD9880059D6F2 /* MyHoursHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2904816201CD9880059D6F2 /* MyHoursHeader.swift */; };
 		F2AECA781FEB13B3008C5167 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AECA771FEB13B3008C5167 /* AppDelegate.swift */; };
-		F2AECA7A1FEB13B3008C5167 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AECA791FEB13B3008C5167 /* ViewController.swift */; };
-		F2AECA7D1FEB13B3008C5167 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2AECA7B1FEB13B3008C5167 /* Main.storyboard */; };
 		F2AECA7F1FEB13B3008C5167 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2AECA7E1FEB13B3008C5167 /* Assets.xcassets */; };
 		F2AECA821FEB13B3008C5167 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2AECA801FEB13B3008C5167 /* LaunchScreen.storyboard */; };
 		F2AECA8E1FEB1882008C5167 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AECA8D1FEB1882008C5167 /* KeychainManager.swift */; };
+		F2AECA961FEB1B36008C5167 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2AECA941FEB1B36008C5167 /* LoginViewController.xib */; };
+		F2AECA971FEB1B36008C5167 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AECA951FEB1B36008C5167 /* LoginViewController.swift */; };
+		F2BE73B1201BB0B000B7BDEA /* ProjectApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BE73B0201BB0B000B7BDEA /* ProjectApi.swift */; };
+		F2BE73BE201BBB2400B7BDEA /* ApiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BE73BC201BBB2300B7BDEA /* ApiProtocol.swift */; };
+		F2BE73BF201BBB2400B7BDEA /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BE73BD201BBB2400B7BDEA /* ApiService.swift */; };
+		F2BE73C1201BBF9C00B7BDEA /* ProjectsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BE73C0201BBF9C00B7BDEA /* ProjectsService.swift */; };
+		F2BE73C4201BBFD300B7BDEA /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BE73C3201BBFD300B7BDEA /* Project.swift */; };
+		F2BE73C6201BC9B600B7BDEA /* BasicAuthHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BE73C5201BC9B600B7BDEA /* BasicAuthHeader.swift */; };
+		F2BE73C9201BCD4500B7BDEA /* ProjectsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BE73C8201BCD4500B7BDEA /* ProjectsResponse.swift */; };
+		F2BE73CE201BCF6800B7BDEA /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BE73CC201BCF6800B7BDEA /* ProjectsViewController.swift */; };
+		F2BE73CF201BCF6800B7BDEA /* ProjectsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2BE73CD201BCF6800B7BDEA /* ProjectsViewController.xib */; };
+		F2BE73D3201BCFEC00B7BDEA /* UIColor+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BE73D1201BCFEC00B7BDEA /* UIColor+Utils.swift */; };
+		F2BE73D4201BCFEC00B7BDEA /* RedmineMobileColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BE73D2201BCFEC00B7BDEA /* RedmineMobileColors.swift */; };
+		F2BE73D8201BD3AA00B7BDEA /* Navigation+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BE73D7201BD3AA00B7BDEA /* Navigation+Style.swift */; };
+		F2BE73DB201BD42D00B7BDEA /* SVProgressHUD+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BE73DA201BD42D00B7BDEA /* SVProgressHUD+Style.swift */; };
+		F2BE73DE201BD65F00B7BDEA /* UIWindow+Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BE73DD201BD65F00B7BDEA /* UIWindow+Blur.swift */; };
+		F2BE73E2201BDB2000B7BDEA /* ProjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BE73E0201BDB2000B7BDEA /* ProjectTableViewCell.swift */; };
+		F2BE73E3201BDB2000B7BDEA /* ProjectTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2BE73E1201BDB2000B7BDEA /* ProjectTableViewCell.xib */; };
+		F2BE73E5201BDBC300B7BDEA /* ProjectsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BE73E4201BDBC300B7BDEA /* ProjectsViewModel.swift */; };
+		F2BE73EB201BEA5800B7BDEA /* LoggedHoursViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BE73E9201BEA5800B7BDEA /* LoggedHoursViewController.swift */; };
+		F2BE73EC201BEA5800B7BDEA /* LoggedHoursViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2BE73EA201BEA5800B7BDEA /* LoggedHoursViewController.xib */; };
+		F2DF18CA2022228E00ECE2BF /* Encodable+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DF18C92022228E00ECE2BF /* Encodable+JSON.swift */; };
+		F2DF18CE2022530300ECE2BF /* ProjectApi+Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DF18CD2022530300ECE2BF /* ProjectApi+Requests.swift */; };
+		F2E53EBD2049C47000CB8064 /* RxAlamofire+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E53EBC2049C47000CB8064 /* RxAlamofire+Codable.swift */; };
+		F2F8BC762179040F0000355C /* TimeEntriesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F8BC752179040F0000355C /* TimeEntriesRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3C0DB1BE881F4D458EB0A9ED /* Pods-RedmineMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedmineMobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-RedmineMobile/Pods-RedmineMobile.release.xcconfig"; sourceTree = "<group>"; };
 		66C37C3AC9E4FF89BE23B754 /* Pods-RedmineMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedmineMobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RedmineMobile/Pods-RedmineMobile.debug.xcconfig"; sourceTree = "<group>"; };
 		DCBA51AAB598E5107D2A5DE5 /* Pods_RedmineMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RedmineMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F208F6C42082846D00694058 /* EnumerationsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumerationsApi.swift; sourceTree = "<group>"; };
+		F208F6C6208284FB00694058 /* EnumerationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumerationService.swift; sourceTree = "<group>"; };
+		F208F6CA20828DBE00694058 /* LogHoursRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogHoursRequest.swift; sourceTree = "<group>"; };
+		F208F6CD208364A700694058 /* IssuesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssuesViewController.swift; sourceTree = "<group>"; };
+		F208F6CE208364A700694058 /* IssuesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IssuesViewController.xib; sourceTree = "<group>"; };
+		F208F6D3208364FF00694058 /* IssueTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueTableViewCell.swift; sourceTree = "<group>"; };
+		F208F6D4208364FF00694058 /* IssueTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IssueTableViewCell.xib; sourceTree = "<group>"; };
+		F208F6D820836A3C00694058 /* TimeEntryActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeEntryActivity.swift; sourceTree = "<group>"; };
+		F208F6DA20836A6F00694058 /* IssuePriorities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssuePriorities.swift; sourceTree = "<group>"; };
+		F208F6DD20836BAD00694058 /* IssuesApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssuesApi.swift; sourceTree = "<group>"; };
+		F208F6E020836C1600694058 /* ProjectIssuesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectIssuesRequest.swift; sourceTree = "<group>"; };
+		F208F6E220836C9D00694058 /* IssuesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssuesViewModel.swift; sourceTree = "<group>"; };
+		F208F6E520836CB600694058 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		F208F6E720836D3300694058 /* IssueService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueService.swift; sourceTree = "<group>"; };
+		F208F6EA20836DE300694058 /* IssuesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssuesResponse.swift; sourceTree = "<group>"; };
+		F208F6ED20837B1C00694058 /* Sequence+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Utils.swift"; sourceTree = "<group>"; };
+		F208F6F02083A02E00694058 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		F208F6F12083A02E00694058 /* WebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
+		F208F6F52083D50900694058 /* ProjectTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTimerViewController.swift; sourceTree = "<group>"; };
+		F208F6F62083D50900694058 /* ProjectTimerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProjectTimerViewController.xib; sourceTree = "<group>"; };
+		F208F6F92083F14200694058 /* ProjectTimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTimerViewModel.swift; sourceTree = "<group>"; };
+		F208F6FB2083F17C00694058 /* TimekeepingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimekeepingService.swift; sourceTree = "<group>"; };
+		F208F6FD208538C500694058 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		F208F6FF20853F2C00694058 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		F208F70220853F6600694058 /* UsersApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersApi.swift; sourceTree = "<group>"; };
+		F208F7052085405E00694058 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F208F7082085444E00694058 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		F208F70B2085463000694058 /* UIViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
+		F28262B5201E021D00025086 /* UIButton+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Utils.swift"; sourceTree = "<group>"; };
+		F29047FE201CB7700059D6F2 /* TimeEntryApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeEntryApi.swift; sourceTree = "<group>"; };
+		F2904800201CB91E0059D6F2 /* TimeEntriesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeEntriesResponse.swift; sourceTree = "<group>"; };
+		F2904802201CBA030059D6F2 /* TimeEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeEntry.swift; sourceTree = "<group>"; };
+		F2904804201CBA680059D6F2 /* TimeEntryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeEntryService.swift; sourceTree = "<group>"; };
+		F2904806201CC03D0059D6F2 /* LoggedHoursViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedHoursViewModel.swift; sourceTree = "<group>"; };
+		F290480A201CCBBD0059D6F2 /* MyHoursHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyHoursHeader.xib; sourceTree = "<group>"; };
+		F290480D201CCF130059D6F2 /* ProjectHoursTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectHoursTableViewCell.swift; sourceTree = "<group>"; };
+		F290480E201CCF130059D6F2 /* ProjectHoursTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProjectHoursTableViewCell.xib; sourceTree = "<group>"; };
+		F2904813201CCFE50059D6F2 /* ProjectTimeEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTimeEntry.swift; sourceTree = "<group>"; };
+		F2904816201CD9880059D6F2 /* MyHoursHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHoursHeader.swift; sourceTree = "<group>"; };
 		F2AECA741FEB13B3008C5167 /* RedmineMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedmineMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2AECA771FEB13B3008C5167 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F2AECA791FEB13B3008C5167 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F2AECA7C1FEB13B3008C5167 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F2AECA7E1FEB13B3008C5167 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2AECA811FEB13B3008C5167 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2AECA831FEB13B3008C5167 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2AECA8D1FEB1882008C5167 /* KeychainManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		F2AECA941FEB1B36008C5167 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		F2AECA951FEB1B36008C5167 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F2BE73B0201BB0B000B7BDEA /* ProjectApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectApi.swift; sourceTree = "<group>"; };
+		F2BE73BC201BBB2300B7BDEA /* ApiProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiProtocol.swift; sourceTree = "<group>"; };
+		F2BE73BD201BBB2400B7BDEA /* ApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		F2BE73C0201BBF9C00B7BDEA /* ProjectsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsService.swift; sourceTree = "<group>"; };
+		F2BE73C3201BBFD300B7BDEA /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		F2BE73C5201BC9B600B7BDEA /* BasicAuthHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicAuthHeader.swift; sourceTree = "<group>"; };
+		F2BE73C8201BCD4500B7BDEA /* ProjectsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsResponse.swift; sourceTree = "<group>"; };
+		F2BE73CC201BCF6800B7BDEA /* ProjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewController.swift; sourceTree = "<group>"; };
+		F2BE73CD201BCF6800B7BDEA /* ProjectsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProjectsViewController.xib; sourceTree = "<group>"; };
+		F2BE73D1201BCFEC00B7BDEA /* UIColor+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Utils.swift"; sourceTree = "<group>"; };
+		F2BE73D2201BCFEC00B7BDEA /* RedmineMobileColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedmineMobileColors.swift; sourceTree = "<group>"; };
+		F2BE73D7201BD3AA00B7BDEA /* Navigation+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Navigation+Style.swift"; sourceTree = "<group>"; };
+		F2BE73DA201BD42D00B7BDEA /* SVProgressHUD+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SVProgressHUD+Style.swift"; sourceTree = "<group>"; };
+		F2BE73DD201BD65F00B7BDEA /* UIWindow+Blur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Blur.swift"; sourceTree = "<group>"; };
+		F2BE73E0201BDB2000B7BDEA /* ProjectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTableViewCell.swift; sourceTree = "<group>"; };
+		F2BE73E1201BDB2000B7BDEA /* ProjectTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProjectTableViewCell.xib; sourceTree = "<group>"; };
+		F2BE73E4201BDBC300B7BDEA /* ProjectsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewModel.swift; sourceTree = "<group>"; };
+		F2BE73E9201BEA5800B7BDEA /* LoggedHoursViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedHoursViewController.swift; sourceTree = "<group>"; };
+		F2BE73EA201BEA5800B7BDEA /* LoggedHoursViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoggedHoursViewController.xib; sourceTree = "<group>"; };
+		F2DF18C92022228E00ECE2BF /* Encodable+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+JSON.swift"; sourceTree = "<group>"; };
+		F2DF18CD2022530300ECE2BF /* ProjectApi+Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProjectApi+Requests.swift"; sourceTree = "<group>"; };
+		F2E53EBC2049C47000CB8064 /* RxAlamofire+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RxAlamofire+Codable.swift"; sourceTree = "<group>"; };
+		F2F8BC752179040F0000355C /* TimeEntriesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeEntriesRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +175,204 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F208F6C820828DA600694058 /* Time Entries */ = {
+			isa = PBXGroup;
+			children = (
+				F208F6C920828DAE00694058 /* Requests */,
+				F29047FE201CB7700059D6F2 /* TimeEntryApi.swift */,
+			);
+			path = "Time Entries";
+			sourceTree = "<group>";
+		};
+		F208F6C920828DAE00694058 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				F208F6CA20828DBE00694058 /* LogHoursRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		F208F6CC2083648300694058 /* Issues */ = {
+			isa = PBXGroup;
+			children = (
+				F208F6D1208364CE00694058 /* Views */,
+				F208F6CD208364A700694058 /* IssuesViewController.swift */,
+				F208F6CE208364A700694058 /* IssuesViewController.xib */,
+				F208F6E220836C9D00694058 /* IssuesViewModel.swift */,
+			);
+			path = Issues;
+			sourceTree = "<group>";
+		};
+		F208F6D1208364CE00694058 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F208F6D2208364D500694058 /* Cell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F208F6D2208364D500694058 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F208F6D3208364FF00694058 /* IssueTableViewCell.swift */,
+				F208F6D4208364FF00694058 /* IssueTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F208F6D720836A2F00694058 /* Enumerations */ = {
+			isa = PBXGroup;
+			children = (
+				F208F6D820836A3C00694058 /* TimeEntryActivity.swift */,
+				F208F6DA20836A6F00694058 /* IssuePriorities.swift */,
+			);
+			path = Enumerations;
+			sourceTree = "<group>";
+		};
+		F208F6DC20836B8800694058 /* Issues */ = {
+			isa = PBXGroup;
+			children = (
+				F208F6DF20836BF500694058 /* Requests */,
+				F208F6DD20836BAD00694058 /* IssuesApi.swift */,
+			);
+			path = Issues;
+			sourceTree = "<group>";
+		};
+		F208F6DF20836BF500694058 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				F208F6E020836C1600694058 /* ProjectIssuesRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		F208F6E420836CAC00694058 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F208F6E520836CB600694058 /* ViewModel.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F208F6E920836DD700694058 /* Issues */ = {
+			isa = PBXGroup;
+			children = (
+				F208F6EA20836DE300694058 /* IssuesResponse.swift */,
+			);
+			path = Issues;
+			sourceTree = "<group>";
+		};
+		F208F6EC20837B0F00694058 /* Sequence */ = {
+			isa = PBXGroup;
+			children = (
+				F208F6ED20837B1C00694058 /* Sequence+Utils.swift */,
+			);
+			path = Sequence;
+			sourceTree = "<group>";
+		};
+		F208F6EF2083A02E00694058 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				F208F6F02083A02E00694058 /* WebViewController.swift */,
+				F208F6F12083A02E00694058 /* WebViewController.xib */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
+		F208F6F42083D4E600694058 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				F208F6F52083D50900694058 /* ProjectTimerViewController.swift */,
+				F208F6F62083D50900694058 /* ProjectTimerViewController.xib */,
+				F208F6F92083F14200694058 /* ProjectTimerViewModel.swift */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		F208F70120853F4800694058 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				F208F70220853F6600694058 /* UsersApi.swift */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		F208F7042085405300694058 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				F208F7052085405E00694058 /* User.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		F208F7072085443F00694058 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				F208F7082085444E00694058 /* Errors.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		F208F70A2085463000694058 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F208F70B2085463000694058 /* UIViewController+Utils.swift */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		F28262B4201E01FE00025086 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				F28262B5201E021D00025086 /* UIButton+Utils.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		F2904808201CCB860059D6F2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F290480C201CCEE10059D6F2 /* Table Cell */,
+				F2904809201CCB960059D6F2 /* My Hours Header */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F2904809201CCB960059D6F2 /* My Hours Header */ = {
+			isa = PBXGroup;
+			children = (
+				F290480A201CCBBD0059D6F2 /* MyHoursHeader.xib */,
+				F2904816201CD9880059D6F2 /* MyHoursHeader.swift */,
+			);
+			path = "My Hours Header";
+			sourceTree = "<group>";
+		};
+		F290480C201CCEE10059D6F2 /* Table Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F290480D201CCF130059D6F2 /* ProjectHoursTableViewCell.swift */,
+				F290480E201CCF130059D6F2 /* ProjectHoursTableViewCell.xib */,
+			);
+			path = "Table Cell";
+			sourceTree = "<group>";
+		};
+		F2904811201CCFC20059D6F2 /* Time Entry */ = {
+			isa = PBXGroup;
+			children = (
+				F2904802201CBA030059D6F2 /* TimeEntry.swift */,
+			);
+			path = "Time Entry";
+			sourceTree = "<group>";
+		};
+		F2904815201CD0A40059D6F2 /* View  Model */ = {
+			isa = PBXGroup;
+			children = (
+				F2904806201CC03D0059D6F2 /* LoggedHoursViewModel.swift */,
+				F2904813201CCFE50059D6F2 /* ProjectTimeEntry.swift */,
+			);
+			path = "View  Model";
+			sourceTree = "<group>";
+		};
 		F2AECA6B1FEB13B3008C5167 = {
 			isa = PBXGroup;
 			children = (
@@ -72,12 +394,15 @@
 		F2AECA761FEB13B3008C5167 /* RedmineMobile */ = {
 			isa = PBXGroup;
 			children = (
+				F208F6E420836CAC00694058 /* Base */,
+				F2BE73D0201BCFD700B7BDEA /* Extensions */,
+				F2BE73C2201BBFC400B7BDEA /* Model */,
+				F2BE73A9201BADE200B7BDEA /* API */,
 				F2AECA8C1FEB180C008C5167 /* Assets */,
 				F2AECA8B1FEB17F9008C5167 /* View Controllers */,
 				F2AECA8A1FEB17F5008C5167 /* Services */,
 				F2AECA891FEB17F0008C5167 /* Helpers */,
 				F2AECA771FEB13B3008C5167 /* AppDelegate.swift */,
-				F2AECA7B1FEB13B3008C5167 /* Main.storyboard */,
 				F2AECA831FEB13B3008C5167 /* Info.plist */,
 			);
 			path = RedmineMobile;
@@ -94,6 +419,13 @@
 		F2AECA8A1FEB17F5008C5167 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				F2BE73C0201BBF9C00B7BDEA /* ProjectsService.swift */,
+				F2904804201CBA680059D6F2 /* TimeEntryService.swift */,
+				F208F6C6208284FB00694058 /* EnumerationService.swift */,
+				F208F6E720836D3300694058 /* IssueService.swift */,
+				F208F6FB2083F17C00694058 /* TimekeepingService.swift */,
+				F208F6FD208538C500694058 /* AuthenticationService.swift */,
+				F208F6FF20853F2C00694058 /* UserService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -101,7 +433,12 @@
 		F2AECA8B1FEB17F9008C5167 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F2AECA791FEB13B3008C5167 /* ViewController.swift */,
+				F208F6F42083D4E600694058 /* Timer */,
+				F208F6EF2083A02E00694058 /* Web */,
+				F208F6CC2083648300694058 /* Issues */,
+				F2BE73E6201BE91D00B7BDEA /* My Logged Hours */,
+				F2BE73CB201BCF3100B7BDEA /* Projects */,
+				F2AECA931FEB1B36008C5167 /* Login */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -113,6 +450,191 @@
 				F2AECA801FEB13B3008C5167 /* LaunchScreen.storyboard */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		F2AECA931FEB1B36008C5167 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F2AECA941FEB1B36008C5167 /* LoginViewController.xib */,
+				F2AECA951FEB1B36008C5167 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F2BE73A9201BADE200B7BDEA /* API */ = {
+			isa = PBXGroup;
+			children = (
+				F2F8BC74217903FE0000355C /* Requests */,
+				F2BE73C7201BCD2E00B7BDEA /* Results */,
+				F2BE73AF201BB0A200B7BDEA /* Targets */,
+				F2BE73AA201BADEA00B7BDEA /* Base */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		F2BE73AA201BADEA00B7BDEA /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F2BE73CA201BCE6A00B7BDEA /* Auth */,
+				F2BE73BC201BBB2300B7BDEA /* ApiProtocol.swift */,
+				F2BE73BD201BBB2400B7BDEA /* ApiService.swift */,
+				F2E53EBC2049C47000CB8064 /* RxAlamofire+Codable.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F2BE73AF201BB0A200B7BDEA /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				F208F70120853F4800694058 /* Users */,
+				F208F6DC20836B8800694058 /* Issues */,
+				F208F6C820828DA600694058 /* Time Entries */,
+				F2DF18CB2022240700ECE2BF /* Project */,
+				F208F6C42082846D00694058 /* EnumerationsApi.swift */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		F2BE73C2201BBFC400B7BDEA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F208F7072085443F00694058 /* Errors */,
+				F208F7042085405300694058 /* User */,
+				F208F6E920836DD700694058 /* Issues */,
+				F208F6D720836A2F00694058 /* Enumerations */,
+				F2904811201CCFC20059D6F2 /* Time Entry */,
+				F2BE73C3201BBFD300B7BDEA /* Project.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F2BE73C7201BCD2E00B7BDEA /* Results */ = {
+			isa = PBXGroup;
+			children = (
+				F2BE73C8201BCD4500B7BDEA /* ProjectsResponse.swift */,
+				F2904800201CB91E0059D6F2 /* TimeEntriesResponse.swift */,
+			);
+			path = Results;
+			sourceTree = "<group>";
+		};
+		F2BE73CA201BCE6A00B7BDEA /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				F2BE73C5201BC9B600B7BDEA /* BasicAuthHeader.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		F2BE73CB201BCF3100B7BDEA /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				F2BE73DF201BDB0100B7BDEA /* Cell */,
+				F2BE73CC201BCF6800B7BDEA /* ProjectsViewController.swift */,
+				F2BE73CD201BCF6800B7BDEA /* ProjectsViewController.xib */,
+				F2BE73E4201BDBC300B7BDEA /* ProjectsViewModel.swift */,
+			);
+			path = Projects;
+			sourceTree = "<group>";
+		};
+		F2BE73D0201BCFD700B7BDEA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F208F70A2085463000694058 /* UIViewController */,
+				F208F6EC20837B0F00694058 /* Sequence */,
+				F2DF18C82022227C00ECE2BF /* Encodable */,
+				F28262B4201E01FE00025086 /* Button */,
+				F2BE73DC201BD64300B7BDEA /* UIWindow */,
+				F2BE73D9201BD41A00B7BDEA /* SVProgressHUD */,
+				F2BE73D6201BD39500B7BDEA /* Navigation Bar */,
+				F2BE73D5201BD38500B7BDEA /* Color */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F2BE73D5201BD38500B7BDEA /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				F2BE73D1201BCFEC00B7BDEA /* UIColor+Utils.swift */,
+				F2BE73D2201BCFEC00B7BDEA /* RedmineMobileColors.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		F2BE73D6201BD39500B7BDEA /* Navigation Bar */ = {
+			isa = PBXGroup;
+			children = (
+				F2BE73D7201BD3AA00B7BDEA /* Navigation+Style.swift */,
+			);
+			path = "Navigation Bar";
+			sourceTree = "<group>";
+		};
+		F2BE73D9201BD41A00B7BDEA /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				F2BE73DA201BD42D00B7BDEA /* SVProgressHUD+Style.swift */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		F2BE73DC201BD64300B7BDEA /* UIWindow */ = {
+			isa = PBXGroup;
+			children = (
+				F2BE73DD201BD65F00B7BDEA /* UIWindow+Blur.swift */,
+			);
+			path = UIWindow;
+			sourceTree = "<group>";
+		};
+		F2BE73DF201BDB0100B7BDEA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F2BE73E0201BDB2000B7BDEA /* ProjectTableViewCell.swift */,
+				F2BE73E1201BDB2000B7BDEA /* ProjectTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F2BE73E6201BE91D00B7BDEA /* My Logged Hours */ = {
+			isa = PBXGroup;
+			children = (
+				F2904815201CD0A40059D6F2 /* View  Model */,
+				F2904808201CCB860059D6F2 /* Views */,
+				F2BE73E9201BEA5800B7BDEA /* LoggedHoursViewController.swift */,
+				F2BE73EA201BEA5800B7BDEA /* LoggedHoursViewController.xib */,
+			);
+			path = "My Logged Hours";
+			sourceTree = "<group>";
+		};
+		F2DF18C82022227C00ECE2BF /* Encodable */ = {
+			isa = PBXGroup;
+			children = (
+				F2DF18C92022228E00ECE2BF /* Encodable+JSON.swift */,
+			);
+			path = Encodable;
+			sourceTree = "<group>";
+		};
+		F2DF18CB2022240700ECE2BF /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				F2DF18CC2022240F00ECE2BF /* Requests */,
+				F2BE73B0201BB0B000B7BDEA /* ProjectApi.swift */,
+			);
+			path = Project;
+			sourceTree = "<group>";
+		};
+		F2DF18CC2022240F00ECE2BF /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				F2DF18CD2022530300ECE2BF /* ProjectApi+Requests.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		F2F8BC74217903FE0000355C /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				F2F8BC752179040F0000355C /* TimeEntriesRequest.swift */,
+			);
+			path = Requests;
 			sourceTree = "<group>";
 		};
 		FA58F0D7E45BEDFE3F9BA513 /* Frameworks */ = {
@@ -185,9 +707,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2BE73CF201BCF6800B7BDEA /* ProjectsViewController.xib in Resources */,
+				F208F6D6208364FF00694058 /* IssueTableViewCell.xib in Resources */,
+				F2904810201CCF130059D6F2 /* ProjectHoursTableViewCell.xib in Resources */,
+				F2AECA961FEB1B36008C5167 /* LoginViewController.xib in Resources */,
+				F2BE73EC201BEA5800B7BDEA /* LoggedHoursViewController.xib in Resources */,
+				F208F6D0208364A700694058 /* IssuesViewController.xib in Resources */,
+				F290480B201CCBBD0059D6F2 /* MyHoursHeader.xib in Resources */,
+				F2BE73E3201BDB2000B7BDEA /* ProjectTableViewCell.xib in Resources */,
+				F208F6F32083A04100694058 /* WebViewController.xib in Resources */,
 				F2AECA821FEB13B3008C5167 /* LaunchScreen.storyboard in Resources */,
+				F208F6F82083D50900694058 /* ProjectTimerViewController.xib in Resources */,
 				F2AECA7F1FEB13B3008C5167 /* Assets.xcassets in Resources */,
-				F2AECA7D1FEB13B3008C5167 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,20 +734,36 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-RedmineMobile/Pods-RedmineMobile-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
+				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
-				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
-				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
-				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxWebKit/RxWebKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxWebKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,23 +811,68 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2AECA7A1FEB13B3008C5167 /* ViewController.swift in Sources */,
+				F208F6F72083D50900694058 /* ProjectTimerViewController.swift in Sources */,
+				F208F6D920836A3C00694058 /* TimeEntryActivity.swift in Sources */,
+				F2BE73DB201BD42D00B7BDEA /* SVProgressHUD+Style.swift in Sources */,
+				F208F6E320836C9D00694058 /* IssuesViewModel.swift in Sources */,
+				F208F6E820836D3300694058 /* IssueService.swift in Sources */,
+				F2904803201CBA030059D6F2 /* TimeEntry.swift in Sources */,
+				F2E53EBD2049C47000CB8064 /* RxAlamofire+Codable.swift in Sources */,
+				F208F6EB20836DE300694058 /* IssuesResponse.swift in Sources */,
+				F2BE73D4201BCFEC00B7BDEA /* RedmineMobileColors.swift in Sources */,
+				F208F6FC2083F17C00694058 /* TimekeepingService.swift in Sources */,
+				F208F6C52082846D00694058 /* EnumerationsApi.swift in Sources */,
+				F208F6FA2083F14200694058 /* ProjectTimerViewModel.swift in Sources */,
+				F2AECA971FEB1B36008C5167 /* LoginViewController.swift in Sources */,
+				F208F6DB20836A6F00694058 /* IssuePriorities.swift in Sources */,
+				F2BE73B1201BB0B000B7BDEA /* ProjectApi.swift in Sources */,
+				F2BE73DE201BD65F00B7BDEA /* UIWindow+Blur.swift in Sources */,
+				F208F6CB20828DBE00694058 /* LogHoursRequest.swift in Sources */,
+				F2BE73D8201BD3AA00B7BDEA /* Navigation+Style.swift in Sources */,
+				F2BE73E2201BDB2000B7BDEA /* ProjectTableViewCell.swift in Sources */,
+				F2BE73EB201BEA5800B7BDEA /* LoggedHoursViewController.swift in Sources */,
+				F2BE73CE201BCF6800B7BDEA /* ProjectsViewController.swift in Sources */,
+				F2904801201CB91E0059D6F2 /* TimeEntriesResponse.swift in Sources */,
+				F2DF18CA2022228E00ECE2BF /* Encodable+JSON.swift in Sources */,
+				F208F70020853F2C00694058 /* UserService.swift in Sources */,
+				F2BE73D3201BCFEC00B7BDEA /* UIColor+Utils.swift in Sources */,
+				F2904807201CC03D0059D6F2 /* LoggedHoursViewModel.swift in Sources */,
+				F2904814201CCFE50059D6F2 /* ProjectTimeEntry.swift in Sources */,
+				F208F6DE20836BAD00694058 /* IssuesApi.swift in Sources */,
+				F2BE73BF201BBB2400B7BDEA /* ApiService.swift in Sources */,
+				F2BE73E5201BDBC300B7BDEA /* ProjectsViewModel.swift in Sources */,
+				F208F7062085405E00694058 /* User.swift in Sources */,
+				F208F6EE20837B1C00694058 /* Sequence+Utils.swift in Sources */,
+				F208F6CF208364A700694058 /* IssuesViewController.swift in Sources */,
+				F29047FF201CB7700059D6F2 /* TimeEntryApi.swift in Sources */,
+				F28262B6201E021D00025086 /* UIButton+Utils.swift in Sources */,
+				F2BE73BE201BBB2400B7BDEA /* ApiProtocol.swift in Sources */,
+				F208F6C7208284FB00694058 /* EnumerationService.swift in Sources */,
+				F2F8BC762179040F0000355C /* TimeEntriesRequest.swift in Sources */,
+				F2BE73C6201BC9B600B7BDEA /* BasicAuthHeader.swift in Sources */,
 				F2AECA8E1FEB1882008C5167 /* KeychainManager.swift in Sources */,
+				F208F70C2085463400694058 /* UIViewController+Utils.swift in Sources */,
+				F208F6D5208364FF00694058 /* IssueTableViewCell.swift in Sources */,
 				F2AECA781FEB13B3008C5167 /* AppDelegate.swift in Sources */,
+				F2BE73C1201BBF9C00B7BDEA /* ProjectsService.swift in Sources */,
+				F208F6F22083A03600694058 /* WebViewController.swift in Sources */,
+				F208F7092085444E00694058 /* Errors.swift in Sources */,
+				F208F6E620836CB600694058 /* ViewModel.swift in Sources */,
+				F208F6E120836C1600694058 /* ProjectIssuesRequest.swift in Sources */,
+				F290480F201CCF130059D6F2 /* ProjectHoursTableViewCell.swift in Sources */,
+				F2BE73C9201BCD4500B7BDEA /* ProjectsResponse.swift in Sources */,
+				F2904805201CBA680059D6F2 /* TimeEntryService.swift in Sources */,
+				F2904817201CD9880059D6F2 /* MyHoursHeader.swift in Sources */,
+				F2DF18CE2022530300ECE2BF /* ProjectApi+Requests.swift in Sources */,
+				F208F70320853F6600694058 /* UsersApi.swift in Sources */,
+				F2BE73C4201BBFD300B7BDEA /* Project.swift in Sources */,
+				F208F6FE208538C500694058 /* AuthenticationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F2AECA7B1FEB13B3008C5167 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F2AECA7C1FEB13B3008C5167 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F2AECA801FEB13B3008C5167 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -411,7 +1003,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = nl.dtt.RedmineMobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -427,7 +1019,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = nl.dtt.RedmineMobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

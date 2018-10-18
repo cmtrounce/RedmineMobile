@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProjectTimerViewController" customModule="RedmineMobile" customModuleProvider="target">
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="dismissButton" destination="CDT-D6-UIk" id="55l-Db-i1a"/>
+                <outlet property="elapsedTimeLabel" destination="bm2-Q4-vGR" id="vD5-MF-6tY"/>
+                <outlet property="pauseTimerButton" destination="AnM-oN-Bwd" id="pyf-o6-2ST"/>
+                <outlet property="projectTitleLabel" destination="fuV-nF-M8J" id="3Sc-ht-QbL"/>
+                <outlet property="startTimerButton" destination="5Jn-Zd-wuk" id="ODU-me-dZe"/>
+                <outlet property="stopTimerButton" destination="IFj-f8-4uo" id="YM2-oq-kfb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bm2-Q4-vGR">
+                    <rect key="frame" x="24.5" y="90.5" width="271.5" height="72"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDT-D6-UIk">
+                    <rect key="frame" x="20" y="40" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="X4r-Ma-XBC"/>
+                        <constraint firstAttribute="width" constant="25" id="gVi-vM-Mef"/>
+                    </constraints>
+                    <state key="normal" image="cancel"/>
+                    <connections>
+                        <action selector="dismissButtonTouched:" destination="-1" eventType="touchUpInside" id="HZD-at-1Yn"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Project title label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fuV-nF-M8J">
+                    <rect key="frame" x="55" y="70" width="210" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3eP-Sw-Kvf">
+                    <rect key="frame" x="30" y="192.5" width="260" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Jn-Zd-wuk">
+                            <rect key="frame" x="0.0" y="0.0" width="260" height="30"/>
+                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="nPv-u6-YpD"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="Start timer">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="startTimerButton"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="startTimerButtonTouched:" destination="-1" eventType="touchUpInside" id="wda-oj-zpb"/>
+                            </connections>
+                        </button>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="KsI-Gj-MqT">
+                            <rect key="frame" x="0.0" y="40" width="260" height="0.0"/>
+                            <subviews>
+                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IFj-f8-4uo">
+                                    <rect key="frame" x="-30" y="-232.5" width="0.0" height="30"/>
+                                    <color key="backgroundColor" red="0.7057849169" green="0.0" blue="0.037565249949999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="8Bs-zn-Jov"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <state key="normal" title="Stop">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                </button>
+                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AnM-oN-Bwd">
+                                    <rect key="frame" x="-30" y="-232.5" width="0.0" height="30"/>
+                                    <color key="backgroundColor" red="0.91799998279999995" green="0.92199999089999995" blue="0.92500001190000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="vxk-Aq-5ks"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <state key="normal" title="Pause">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <state key="selected" title="Resume">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="pauseTimerButton:" destination="-1" eventType="touchUpInside" id="ESZ-IZ-HNU"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fuV-nF-M8J" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="3rq-h1-p1k"/>
+                <constraint firstItem="3eP-Sw-Kvf" firstAttribute="top" secondItem="bm2-Q4-vGR" secondAttribute="bottom" constant="30" id="4Dn-ZN-2IR"/>
+                <constraint firstItem="CDT-D6-UIk" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="6nn-lT-IAw"/>
+                <constraint firstItem="3eP-Sw-Kvf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="8TG-ai-NvA"/>
+                <constraint firstItem="bm2-Q4-vGR" firstAttribute="top" secondItem="fuV-nF-M8J" secondAttribute="bottom" id="QqQ-V7-SQB"/>
+                <constraint firstItem="CDT-D6-UIk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="aFQ-Kd-Vxi"/>
+                <constraint firstItem="fuV-nF-M8J" firstAttribute="leading" secondItem="CDT-D6-UIk" secondAttribute="trailing" constant="10" id="aIL-e9-Wpp"/>
+                <constraint firstItem="fuV-nF-M8J" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="eRR-gd-B0M"/>
+                <constraint firstItem="bm2-Q4-vGR" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="laf-Mo-zWb"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3eP-Sw-Kvf" secondAttribute="trailing" constant="30" id="nIz-vs-Ewm"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cancel" width="42" height="42"/>
+    </resources>
+</document>
