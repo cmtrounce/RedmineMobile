@@ -9,7 +9,8 @@
 import UIKit
 import SVProgressHUD
 import SwiftDate
-import FSCalendar
+import RxSwift
+import RxCocoa
 import Hero
 import SDWebImage
 
@@ -23,6 +24,7 @@ class LoggedHoursViewController: UIViewController {
     
     fileprivate let viewModel = LoggedHoursViewModel()
     fileprivate var currentlyExpandedRow: Int? = nil
+    private let disposeBag = DisposeBag()
     
     @IBOutlet weak var headerView: MyHoursHeader!
     
@@ -96,25 +98,30 @@ extension LoggedHoursViewController {
    
     func setProfileImageOnBarButton() {
         
-        guard let user = UserService.shared.current,
-            let server = UserDefaults.standard.string(forKey: "server"),
-            let url = URL.init(string: server + "account/get_avatar/\(user.id)") else { return }
-        
-        let button = UIButton()
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.imageView?.contentMode = .scaleAspectFill
-        button.sd_setImage(with: url, for: .normal, completed: nil)
-        button.frame = CGRect.init(x: 0, y: 0, width: 32, height: 32)
-        button.layer.cornerRadius = 16
-        button.layer.masksToBounds = true
-        button.layer.borderColor = UIColor.white.cgColor
-        button.layer.borderWidth = 0.5
-        let barButton = UIBarButtonItem(customView: button)
-        self.navigationItem.leftBarButtonItem = barButton
-        
-        button.widthAnchor.constraint(equalToConstant: 32).isActive = true
-        button.heightAnchor.constraint(equalToConstant: 32).isActive = true
-        
+        UserService.shared.fetchCurrent()
+            .map { $0.user }
+            .subscribe(onNext: { (user) in
+                
+                guard let server = UserDefaults.standard.string(forKey: "server"),
+                    let url = URL.init(string: server + "account/get_avatar/\(user.id)") else { return }
+                let button = UIButton()
+                button.translatesAutoresizingMaskIntoConstraints = false
+                button.imageView?.contentMode = .scaleAspectFill
+                button.sd_setImage(with: url, for: .normal, completed: nil)
+                button.frame = CGRect.init(x: 0, y: 0, width: 32, height: 32)
+                button.layer.cornerRadius = 16
+                button.layer.masksToBounds = true
+                button.layer.borderColor = UIColor.white.cgColor
+                button.layer.borderWidth = 0.5
+                let barButton = UIBarButtonItem(customView: button)
+                self.navigationItem.leftBarButtonItem = barButton
+                
+                button.widthAnchor.constraint(equalToConstant: 32).isActive = true
+                button.heightAnchor.constraint(equalToConstant: 32).isActive = true
+                
+            }, onError: { (error) in
+                print(error.localizedDescription)
+            }).disposed(by: disposeBag)
     }
     
     fileprivate func configureFilterButton() {

@@ -7,11 +7,17 @@
 //
 
 import Foundation
+import RxSwift
 
 class UserService {
     
     static let shared = UserService()
     
-    var current: User?
-    
+    private let networking = Networking<UsersApi>()
+
+    func fetchCurrent() -> Observable<UserResponse> {
+        return networking
+            .request(to: .current)
+            .mapCodable()
+    }
 }

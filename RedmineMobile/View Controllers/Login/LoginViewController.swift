@@ -39,8 +39,6 @@ class LoginViewController: UIViewController {
                           success:
             { user in
                 
-                UserService.shared.current = user
-                
                 print("LOGGED IN AS " + user.firstname + " " + user.lastname)
                 guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
                     return
